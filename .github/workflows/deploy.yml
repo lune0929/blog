@@ -35,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Quartz 빌드
-        run: npx quartz build
+        run: node ./quartz/bootstrap-cli.mjs build
 
       - name: 빌드 결과 업로드
         uses: actions/upload-pages-artifact@v3
