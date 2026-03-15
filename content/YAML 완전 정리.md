@@ -261,6 +261,41 @@ tags: [a, b, c]
 
 > **Tip:** Obsidian의 **Dataview** 플러그인을 쓰면 Front Matter 데이터를 기반으로 노트를 표/리스트로 자동 조회 가능.
 
+
+| 항목     | HTML(HyperText Markup Language) | XML(eXtensible Markup Language) | JSON(JavaScript Object Notation)                                               | YAML(YAML Ain't Markup Language: 야믈)                                                                                                             |
+| ------ | ------------------------------- | ------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 주용도    | 웹 문서 표시                         | 구조화 데이터 표현                      | 데이터 교환                                                                         | 설정/데이터 표현                                                                                                                                        |
+| 읽는 주체  | 브라우저                            | 시스템/프로그램                        | 프로그램                                                                           | 사람 + 프로그램                                                                                                                                        |
+| 문법 방식  | 태그                              | 태그                              | 중괄호, 대괄호                                                                       | 들여쓰기                                                                                                                                             |
+| 가독성    | 화면 구조 중심                        | 장황한 편                           | 비교적 단순                                                                         | 가장 읽기 쉬운 편                                                                                                                                       |
+| 엄격성    | 중간                              | 높음                              | 높음                                                                             | 들여쓰기 실수에 민감                                                                                                                                      |
+| 대표 사용처 | 웹페이지                            | 일부 기업 시스템, 설정, 데이터 교환           | REST API(Representational State Transfer Application Programming Interface) 응답 | Docker Compose(Docker Compose: 도커 다중 컨테이너 구성 도구), </br>GitHub Actions(GitHub Actions: 깃허브 자동화 기능), </br>Kubernetes(Kubernetes: 컨테이너 오케스트레이션 플랫폼) |
+**HTML**
+```html
+<div class="user">  
+  <span class="name">민수</span>  
+  <span class="age">20</span>  
+</div>
+```
+**XML**
+```xml
+<user>  
+  <name>민수</name>  
+  <age>20</age>  
+</user>
+```
+**JSON**
+```json
+{  
+  "name": "민수",  
+  "age": 20  
+}
+```
+**YAML**
+```yaml
+name: 민수  
+age: 20
+```
 ---
 
 *작성일: 2026-03-15 | Obsidian 노트 작성 팁 시리즈*
